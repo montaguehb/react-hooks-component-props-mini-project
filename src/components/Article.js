@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Article = ({post: {title, date, preview, minutes}}) => {
+const Article = (title, minutes, preview, date='January 1, 1970') => {
   const emojis = minutes >= 30? '🍱'.repeat(Math.ceil(minutes/10)):'☕️'.repeat(Math.ceil(minutes/5))
   return (
     <article>
